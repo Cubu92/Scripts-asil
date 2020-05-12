@@ -1,0 +1,113 @@
+---
+---
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Scripts and Guides</title>
+        <link rel="stylesheet" type="text/css" href="css/main.css">
+    </head>
+    <body>
+        <h1>Scripts and Guides</h1>
+        
+        <div class="tab">
+            <input type="text" id="mySearch" onkeyup="searchFunction()" placeholder="Search.." title="Type in a category"> 
+            <ul id="buttonList">
+                <li><button class="tablinks" onclick="openTab(event, 'Handy')" id="defaultOpen">Handy</button></li>
+                <li><button class="tablinks" onclick="openTab(event, 'Motor Partial Details Checked (PDC)')">Motor Partial Details Checked (PDC)</button></li>
+                <li><button class="tablinks" onclick="openTab(event, 'Single Car to  Multi-Car Instaquote')">Single Car to  Multi-Car Instaquote</button></li>
+                <li><button class="tablinks" onclick="openTab(event, 'Multi-Car to Multi-Product Instaquote')">Multi-Car to Multi-Product Instaquote</button></li>
+                <li><button class="tablinks" onclick="openTab(event, 'Single Car to Multi-Product Instaquote')">Single Car to Multi-Product Instaquote</button></li>
+                <li><button class="tablinks" onclick="openTab(event, 'Motor Associate Data')">Motor Associate Data</button></li>
+                <li><button class="tablinks" onclick="openTab(event, 'Motor Future Dated Coverables (FDCs)')">Motor Future Dated Coverables (FDCs)</button></li>
+                <li><button class="tablinks" onclick="openTab(event, 'Motor No Details Checked (NDC)')">Motor No Details Checked (NDC)</button></li>
+                <li><button class="tablinks" onclick="openTab(event, 'Motor Other Ancillaries')">Motor Other Ancillaries</button></li>
+                <li><button class="tablinks" onclick="openTab(event, 'House White Quote')">House White Quote</button></li>
+                <li><button class="tablinks" onclick="openTab(event, 'House Partial Details Checked (PDC)')">House Partial Details Checked (PDC)</li>
+                <li><button class="tablinks" onclick="openTab(event, 'House No Details Checked (NDC)')">House No Details Checked (NDC)</li>
+                <li><button class="tablinks" onclick="openTab(event, 'House Instaquote')">House Instaquote</button></li>
+                <li><button class="tablinks" onclick="openTab(event, 'House Instaquote PDC')">House Instaquote PDC</button></li>
+                <li><button class="tablinks" onclick="openTab(event, 'House Associate Data')">House Associate Data</button></li>
+                <li><button class="tablinks" onclick="openTab(event, 'House Tiers')">House Tiers</button></li>
+                <li><button class="tablinks" onclick="openTab(event, 'House FLP and HEC Key Characteristics (KCs)')">House FLP and HEC Key Characteristics (KCs)</button></li>
+				<li><button class="tablinks" onclick="openTab(event, 'Testing this for MLP')">MLP (KCs)</button></li>
+				
+            </ul>
+        </div>
+
+        <div id="Handy" class="tabcontent">
+            {% include handy.html %}
+        </div>  
+
+        <div id="Single Car to  Multi-Car Instaquote" class="tabcontent">
+            {% include singlecar_to_multicar_instaquote.html %}
+        </div>
+
+        <div id="Single Car to Multi-Product Instaquote" class="tabcontent">
+            {% include singlecar_to_multiproduct_instaquote.html %}
+        </div>
+
+        <div id="Motor Partial Details Checked (PDC)" class="tabcontent">
+            {% include motor_partial_details_checked.html %}
+        </div>
+
+        <div id="Motor No Details Checked (NDC)" class="tabcontent">
+            {% include motor_no_details_checked.html %}
+        </div>
+
+        <div id="Motor Associate Data" class="tabcontent">
+            {% include motor_associate_data.html %}
+        </div>
+
+        <div id="Multi-Car to Multi-Product Instaquote" class="tabcontent">
+            {% include multicar_to_multiproduct_instaquote.html %}
+        </div>
+
+        <div id="Motor Future Dated Coverables (FDCs)" class="tabcontent">
+            {% include motor_future_dated_coverables.html %}
+        </div>
+    
+        <div id="Motor Other Ancillaries" class="tabcontent">
+            {% include motor_other_ancillaries.html %}
+        </div>
+
+        <div id="House White Quote" class="tabcontent">
+            {% include house_white_quote.html %}
+        </div>
+
+        <div id="House Partial Details Checked (PDC)" class="tabcontent">
+            {% include house_partial_details_checked.html %}
+        </div>
+        
+        <div id="House No Details Checked (NDC)" class="tabcontent">
+            {% include house_no_details_checked.html %}
+        </div>
+
+        <div id="House Instaquote" class="tabcontent">
+            {% include house_instaquote.html %}
+        </div>
+
+        <div id="House Instaquote PDC" class="tabcontent">
+            {% include house_instaquote_pdc.html %}
+        </div>
+
+        <div id="House Associate Data" class="tabcontent">
+            {% include house_associate_data.html %}
+        </div>
+
+        <div id="House Tiers" class="tabcontent">
+            {% include house_tiers.html %}
+        </div>
+
+        <div id="House FLP and HEC Key Characteristics (KCs)" class="tabcontent">
+            {% include house_ancillary_key_characteristics.html %}
+        </div>
+		
+        <div id="Testing this for MLP" class="tabcontent">
+            {% include MLP.html %}
+        </div>
+
+        <script src="js/main.js"></script> 
+    
+    </body>
+</html> 
